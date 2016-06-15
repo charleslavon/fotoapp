@@ -1,51 +1,44 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
+  Navigator,
+  Image,
   Text,
   View
 } from 'react-native';
 
+//var Images = require('./App/components/imageLoader/imageLoader.android.js');
+//var Trash = require('./App/views/trashcan/trash.android.js');
+
+var MOCKED_IMAGE_DATA = [
+  {thumbnail: 'http://i.imgur.com/UePbdph.jpg'}
+];
+
 class FotoApp extends Component {
   render() {
+    var image = MOCKED_IMAGE_DATA[0];
+
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
+        <Image source={{uri: image.thumbnail}}
+              style={styles.thumbnail}/>
       </View>
     );
+
   }
 }
 
-const styles = StyleSheet.create({
+var styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  thumbnail: {
+    width: 53,
+    height: 81,
   },
 });
 
