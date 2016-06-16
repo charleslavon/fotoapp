@@ -78,7 +78,7 @@ var CameraRollView = React.createClass({
 
   getDefaultProps: function(): Object {
     return {
-      groupTypes: 'SavedPhotos',
+      groupTypes: 'Album',
       batchSize: 5,
       imagesPerRow: 1,
       assetType: 'Photos',

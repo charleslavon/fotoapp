@@ -9,15 +9,12 @@ import {
 } from 'react-native';
 
 var Images = require('./App/components/ImageLoader/ImageLoader.js');
-//var Trash = require('./App/views/trashcan/trash.android.js');
-
 
 class FotoApp extends Component {
   render() {
     return (
       <Images/>
     );
-
   }
 }
 

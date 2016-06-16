@@ -1,3 +1,5 @@
+'use strict';
+
 const React = require('react');
 const ReactNative = require('react-native');
 const {
@@ -12,25 +14,18 @@ const {
 } = ReactNative;
 
 
-//var Images = require('./App/components/imageLoader/imageLoader.android.js');
-//var Trash = require('./App/views/trashcan/trash.android.js');
-
-
 const CameraRollView = require('./CameraRollView');
 
 const AssetScaledImageExampleView = require('./AssetScaledImageExample');
 
 const CAMERA_ROLL_VIEW = 'camera_roll_view';
 
-var MOCKED_IMAGE_DATA = [
-  {thumbnail: 'http://i.imgur.com/UePbdph.jpg'}
-];
 
 module.exports = React.createClass({
 
   getInitialState() {
     return {
-      groupTypes: 'SavedPhotos',
+      groupTypes: 'Album', //doesn't matter for this project as groutTypes is not yet supported on react-native for Android
       sliderValue: 1,
       bigImages: true,
     };
@@ -86,8 +81,6 @@ module.exports = React.createClass({
 
 
   render() {
-    var image = MOCKED_IMAGE_DATA[0];
-
     return (
       <View>
         <Switch
@@ -101,7 +94,7 @@ module.exports = React.createClass({
         <Text>{'Group Type: ' + this.state.groupTypes}</Text>
         <CameraRollView
           ref={CAMERA_ROLL_VIEW}
-          batchSize={20}
+          batchSize={18}
           groupTypes={this.state.groupTypes}
           renderImage={this._renderImage}
         />
