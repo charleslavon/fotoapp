@@ -17,16 +17,13 @@ Prerequisite: follow the installation steps here - http://facebook.github.io/rea
 	-adb reverse tcp:8081 tcp:8081
 
 
+#App Ideas
+1. Initial UI showing the most recent 18 fotos
+2. Shake to start - main logic processes here
+3. These 18 fotos are processed (using algorithms to be described in another post) and the UI is updated to show the 'best' fotos
+4. Prompt with message asking user if they want to save these fotos and delete the others ("Save only the best & delete the rest?")
 
 #Additional Resources:
 1. Official (albeit lacking) Facebook Documentation: http://facebook.github.io/react-native/releases/0.27/docs/getting-started.html
 2. A collection of resources for react-native: https://github.com/jondot/awesome-react-native
 3. A similar collection but for reactjs: https://github.com/enaqx/awesome-react
-
-
-
-Foto app -
-1. Initial UI showing the most recent 18 fotos
-2. Shake to start - main logic processes here
-3. These 18 fotos are processed (using algorithms to be described in another post) and the UI is updated to show the 'best' fotos
-4. Prompt with message asking user if they want to save these fotos and delete the others ("Save only the best & delete the rest?")
