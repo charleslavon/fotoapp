@@ -27,3 +27,4 @@ Prerequisite: follow the installation steps here - http://facebook.github.io/rea
 1. Official (albeit lacking) Facebook Documentation: http://facebook.github.io/react-native/releases/0.27/docs/getting-started.html
 2. A collection of resources for react-native: https://github.com/jondot/awesome-react-native
 3. A similar collection but for reactjs: https://github.com/enaqx/awesome-react
+4. A tutorial & ebook for reactjs: https://github.com/survivejs/react
